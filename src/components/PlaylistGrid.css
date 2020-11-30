@@ -37,7 +37,7 @@
 
 .category-title {
   color: #aa00ff;
-  font-family: 'Crazy Metro';
+  /* font-family: 'Crazy Metro'; */
   display: flex;
   justify-content: flex-end;
   font-size: 5em;
