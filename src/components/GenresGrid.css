@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, minmax(274px, 0fr));
+  background: black;
+  overflow-y: scroll;
+  height: 825px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: #aa00ff;
+}
+
+@media all and (max-device-width: 480px)
+{
+  .grid-container {
+   display: inline;
+}
+
+}

@@ -1,0 +1,44 @@
+.grid-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.hoveredItem {
+    display: flex;
+    align-items: center;
+    font-family: 'Crazy Metro';
+    font-size: 3em;
+    color: #aa00ff;
+    animation: fade 0.7s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+
+.hoveredImage {
+    display: none;
+}
+
+.showOnMobile {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 6em;
+    position: absolute;
+    font-family: 'Crazy Metro';
+    font-weight: 200;
+}
+
+@media all and (min-device-width: 480px)
+{ .showOnMobile {
+    display: none;
+}
+}
+

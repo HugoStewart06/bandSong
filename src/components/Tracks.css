@@ -1,0 +1,39 @@
+.playlist-item {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.track-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 7em;
+  font-size: 25px;
+  width: auto;
+  overflow-y: scroll;
+  width: 1372px;
+  }
+
+.track-title {
+  font-family: 'Crazy Metro';
+  font-size: 4em;
+  color: #aa00ff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  animation: fade 0.7s ease;
+}
+  
+
+.tracks p {
+  font-size: 50px;
+  margin: 0;
+  animation: fade 0.7s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+

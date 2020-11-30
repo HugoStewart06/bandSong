@@ -1,0 +1,16 @@
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+
+.App {
+  text-align: center;
+}
+
+code {
+  background: #eee;
+  color: #d04;
+}

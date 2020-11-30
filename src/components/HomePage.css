@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Crazy Metro';
+  src: url('/Users/jeromenicco/workspace/paris-react-0920-pjt-bandgang/src/asset/Crazy Metro.otf') format('otf');
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%22%27');
+  }
+  
+  .header {
+    margin-top: 0;
+  }
+
+  .title-homepage {
+    text-align: center !important;
+  }
+  
+  .container-homepage {
+    text-align: center;
+    margin-top: 15%;
+    width: 1372px;
+  }
+
+  .intro-homepage {
+    color: white;
+  }
+
+  .text-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  
+  .arrow {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid#aa00ff;
+    border-right: 3px solid #aa00ff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 1s infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+
+  @media all and (max-device-width: 480px)
+{
+  .container-homepage {
+    width: 300px;
+    letter-spacing: 1px;
+  }
+  .logo-homepage {
+    width: 300px;
+  }
+
+  .app-header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  }
+  .intro-homepage {
+    margin-top: 4em;
+  }
+}
+
+@media all and (min-device-width: 480px)
+{
+  .app-header {
+    font-size: 3em;
+  }
+  .arrow{
+  width: 60px;
+  height: 60px;
+}
+}

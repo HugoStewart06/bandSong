@@ -1,0 +1,108 @@
+.playlist-container {
+  background:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scrollx-section {
+  display: flex;
+  overflow-x: scroll;
+  width: 1372px;
+  height: 642px;
+  background: lightgrey;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: #aa00ff;
+}
+
+.trackAndPlayer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em
+}
+
+.playlist-name {
+  color : white;
+}
+
+.category-title {
+  color: #aa00ff;
+  font-family: 'Crazy Metro';
+  display: flex;
+  justify-content: flex-end;
+  font-size: 5em;
+  margin: 0;
+  margin-top: -1.3em;
+  font-weight: lighter;
+  animation: fade 0.7s ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+}
+}
+
+.player {
+  animation: fade 1s ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+}
+}
+
+@media all and (max-device-width: 480px)
+{
+  .scrollx-section {
+    height: 170px;
+    width: 330px;
+    background: #eee;
+  }
+
+  .playlist-item img {
+    height: 25vh;
+  }
+
+  .trackAndPlayer-container {
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  .trackAndPlayer-container h2 {
+    display: none;
+  }
+
+  .track-container {
+    width: auto;
+  }
+
+  .tracks p {
+    font-size: 25px;
+    margin: 0;
+  }
+  .category-title {
+   display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+@media all and (max-device-width: 480px)
+{
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+   left: 1.7em;
+    font-size: 3em !important;
+  }
+ 
+}
+
+.header {
+  display: flex;
+  height: 8em;
+  background-color: black;
+  padding-bottom: 20px;
+}
+  
+nav {
+  height: 70px;
+  line-height: 70px;
+}
+  
+.link-title {
+  text-decoration: none;
+}
+  
+
+.title {
+  margin-top: 40px;
+  font-size: 6em;
+  color: #aa00ff;
+  text-align: left;
+  background-attachment: none;
+  text-decoration: none !important;
+  font-family: 'Crazy Metro';
+  position: absolute;
+  font-weight: lighter;
+  }
+  
+
+
+@keyframes blinker {
+  100% {
+    opacity: 0;
+  }
+}
+
+@media all and (min-device-width: 480px)
+{
+  .title {
+    margin-left: 0.9;
+  }
+  .title:hover {
+  animation: blinker 0.2s linear infinite;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+}
