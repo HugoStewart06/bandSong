@@ -6,7 +6,6 @@ import axios from 'axios';
 import GenresGrid from './components/GenresGrid';
 import PlaylistGrid from './components/PlaylistGrid';
 import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
 
 import './App.css';
 
@@ -45,7 +44,7 @@ const App = () => {
 
   // USE EFFECT GENREGRID/TOKEN
   useEffect(() => {
-    axios('https://api.spotify.com/v1/browse/categories?limit=50&country=US&locale=UK', {
+    axios('https://api.spotify.com/v1/browse/categories?limit=50&country=US', {
       method: 'GET',
       headers: { Authorization: 'Bearer ' + token }
     }).then((res) => {
@@ -72,10 +71,6 @@ const App = () => {
         <Route path="/playlist/:id" playlists={playlists}>
           <PlaylistGrid token={token} playlists={playlists} setCatchid={setCatchid} />
         </Route>
-        <Route exact path='/'>
-          <HomePage />
-        </Route>
-
         <Route path="/home">
           <GenresGrid filterGenres={filterGenres} />
         </Route>

@@ -4,7 +4,8 @@
   grid-template-columns: repeat(5, minmax(274px, 0fr));
   background: black;
   overflow-y: scroll;
-  height: 825px;
+  height: 40vw;
+  width: 76.6vw;
 }
 
 ::-webkit-scrollbar {

@@ -26,7 +26,7 @@ const PlaylistGrid = ({ token, setCatchid, playlists }) => {
     });
   };
   return (
-    <div>
+    <div className="wrapper">
       <h4 className='category-title'>{id.replace(/[&]/g, 'n').replace(/[/-_]/g, ' ')}</h4>
       <div className='playlist-container'>
         <div className='scrollx-section'>
