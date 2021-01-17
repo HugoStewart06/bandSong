@@ -71,7 +71,7 @@ const App = () => {
         <Route path="/playlist/:id" playlists={playlists}>
           <PlaylistGrid token={token} playlists={playlists} setCatchid={setCatchid} />
         </Route>
-        <Route path="/home">
+        <Route path="/">
           <GenresGrid filterGenres={filterGenres} />
         </Route>
 

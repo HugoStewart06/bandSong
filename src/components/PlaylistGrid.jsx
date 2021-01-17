@@ -32,8 +32,8 @@ const PlaylistGrid = ({ token, setCatchid, playlists }) => {
         <div className='scrollx-section'>
           { playlists.map((playlist) => {
             return (
-              <div className='playlist-item' key={playlist.id} onClick={() => handleClik(playlist.id)} >
-              <img src={(playlist.images[0].url)} alt="picture"/>
+              <div className='playlist-item-container' key={playlist.id} onClick={() => handleClik(playlist.id)} >
+              <img className='playlist-item' src={(playlist.images[0].url)} alt="picture"/>
               </div>
             );
           })}
@@ -42,7 +42,7 @@ const PlaylistGrid = ({ token, setCatchid, playlists }) => {
       {displayTracks &&
       <div className='trackAndPlayer-container'>
         <h2 className='track-title'>Tracks</h2>
-        <audio controls autoPlay={false} name="media" src={song} type="audio/mpeg" className='player' />
+        <audio controls autoPlay={false} name="media" src={song} type="audio/mpeg" className='player' style={{ backGround: 'blue' }} />
       </div>}
       {displayTracks &&
         <Tracks tracks={tracks} setSong={setSong}/>}

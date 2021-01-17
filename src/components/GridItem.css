@@ -9,7 +9,7 @@
 .hoveredItem {
     display: flex;
     align-items: center;
-    font-family: 'Crazy Metro';
+    font-family: "Schoolbell", cursive;
     font-size: 3em;
     color: #aa00ff;
     animation: fade 0.7s ease;
@@ -32,7 +32,7 @@
     font-size: 2em;
     margin-top: 6em;
     position: absolute;
-    font-family: 'Crazy Metro';
+    font-family: "Schoolbell", cursive;
     font-weight: 200;
 }
 

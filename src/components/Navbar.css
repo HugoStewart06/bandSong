@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
 @media all and (max-device-width: 480px)
 {
   .header {
@@ -36,12 +38,11 @@ nav {
   text-align: left;
   background-attachment: none;
   text-decoration: none !important;
-  /* font-family: 'Crazy Metro'; */
+  font-family: "Schoolbell", cursive;
   position: absolute;
   font-weight: lighter;
   }
   
-
 
 @keyframes blinker {
   100% {

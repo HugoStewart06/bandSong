@@ -7,10 +7,15 @@
 .scrollx-section {
   display: flex;
   overflow-x: scroll;
-  width: 1372px;
-  height: 35.9vw;
+  width: 61.5vw;
+  height: 25.19vw;
   background: lightgrey;
 }
+
+.playlist-item {
+  width: 25vw;
+}
+
 
 ::-webkit-scrollbar {
   width: 3px;
@@ -37,7 +42,7 @@
 
 .category-title {
   color: #aa00ff;
-  /* font-family: 'Crazy Metro'; */
+  font-family: "Schoolbell", cursive;
   display: flex;
   justify-content: flex-end;
   font-size: 5em;
@@ -45,6 +50,7 @@
   margin-top: -1.3em;
   font-weight: lighter;
   animation: fade 0.7s ease;
+  padding-bottom: 0.5vw;
 }
 
 @keyframes fade {
@@ -57,6 +63,10 @@
   animation: fade 1s ease;
 }
 
+.player:focus {
+  outline: 0;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -66,13 +76,12 @@
 @media all and (max-device-width: 480px)
 {
   .scrollx-section {
-    height: 170px;
-    width: 330px;
+    min-width: 15vw;
     background: #eee;
   }
 
-  .playlist-item img {
-    height: 25vh;
+  .playlist-item {
+    height: 100%;
   }
 
   .trackAndPlayer-container {
@@ -91,6 +100,7 @@
   .tracks p {
     font-size: 25px;
     margin: 0;
+    font-family: sans-serif;
   }
   .category-title {
    display: none;
