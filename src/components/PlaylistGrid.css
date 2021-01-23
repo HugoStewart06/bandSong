@@ -45,8 +45,7 @@
   font-family: "Schoolbell", cursive;
   display: flex;
   justify-content: flex-end;
-  font-size: 5em;
-  margin: 0;
+  font-size: 3em;
   margin-top: -1.3em;
   font-weight: lighter;
   animation: fade 0.7s ease;

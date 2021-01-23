@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
 
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 1024px)
 {
   .header {
     display: flex;
@@ -9,7 +9,7 @@
 
   .title {
    left: 1.7em;
-    font-size: 3em !important;
+    font-size: 2em !important;
   }
  
 }
@@ -33,7 +33,7 @@ nav {
 
 .title {
   margin-top: 40px;
-  font-size: 6em;
+  font-size: 5em;
   color: #aa00ff;
   text-align: left;
   background-attachment: none;
